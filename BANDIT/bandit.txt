@@ -1,0 +1,11 @@
+cat ./SpecialCharacterFileName : file name contains special character 
+
+cat .FileName : File is Hidden 
+
+file ./* : to list file and filetypes like human readable(ASCII text)
+cat file ./FileName : read above file
+
+
+
+
+
