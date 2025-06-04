@@ -1,11 +1,25 @@
-cat ./SpecialCharacterFileName : file name contains special character 
+cat FileName : read a file
+cat ./- : File with name containing special character like hyphen here
 
-cat .FileName : File is Hidden 
+ls -d .* : List Hidden Files
+cat .HiddenFilename : read a hidden file
 
-file ./* : to list file and filetypes like human readable(ASCII text)
-cat file ./FileName : read above file
+find ./* : Check Human readable Files in Folder
+cat ./FileName : read above file
 
+find /PathToSearch/ -type f -size BytesInNumc ! -executable : a file of given size and not executable
 
+find /Path/ -type f -user UserName -group GroupName -size NumBytesc : find file with given size owner by a user and group
+2>/dev/null : suppress permissions errors
 
+sort FileName | uniq -u : sort file and find unique line
+
+strings FileName : extract human readable strings from file
+
+grep -E '=+' : line contaning one or more =
+
+cat FileName | base64 --decode : decodes data from base64 to plain text
+
+cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m' : ROT13 decode
 
 
