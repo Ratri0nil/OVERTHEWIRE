@@ -22,4 +22,8 @@ cat FileName | base64 --decode : decodes data from base64 to plain text
 
 cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m' : ROT13 decode
 
+mktemp -d : create a random named Directory in tmp
+xxd -r FileName.txt > FileName.bin : reverse hexdump file to binary file
+file -b FileName : Identify Compression type of file
+
 
